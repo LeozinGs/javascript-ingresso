@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/exercicios.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main__wrapper">
+
+        <h1 class="titulo">Exercícios</h1>
+
+        <hr>
+
+        <section class="exercicio exercicio1" id="exercicio-1">
+
+            <h2 class="titulo__exercicio">1- Crie uma função que aceite uma string como parâmetro, utilize a função
+                parseInt para converter essa string em um número inteiro e retorne o resultado.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite abaixo qualquer número para ser convertido de string para número
+                    inteiro:</p>
+                <input type="number" class="campo" placeholder="Digite aqui o número">
+                <button class="exercicio__botao" onclick="mudarParaInteiro()">Converter</button>
+
+                <p class="exercicio__texto resposta">O número digitado aparecerá aqui:  <br>No console terá os dois valores: string(cor normal) e número inteiro(<span class="colorido" style="color: #9980ff;">colorido</span>)</p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="exercicio exercicio2" id="exercicio-2">
+
+            <h2 class="titulo__exercicio">2- Escreva um programa de calculadora simples com funções separadas para adição, subtração, multiplicação e divisão. Utilize um bloco condicional para determinar qual função executar com base em uma variável que representa a operação desejada.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite dois valores, depois clique em um botão para ver sua função ser realizada:</p>
+
+                <input type="number" class="campo campo1" placeholder="Digite o primeiro número">
+                <input type="number" class="campo campo2" placeholder="Digite o segundo número"> 
+                <br>
+                <br>
+                <button class="exercicio__botao soma" onclick="somar()">somar</button>
+                <button class="exercicio__botao subtracao" onclick="subtrair()">subtrair</button>
+                <button class="exercicio__botao multiplicacao" onclick="multiplicar()">multiplicar</button>
+                <button class="exercicio__botao divisao" onclick="dividir()">dividir</button>
+
+                <p class="exercicio__texto resposta">O resultado aparecerá aqui:</p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="exercicio exercicio3" id="exercicio-3">
+
+            <h2 class="titulo__exercicio">3- Implemente uma função que aceite um número como parâmetro e utilize um bloco condicional para determinar se o número é par ou ímpar.</h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Digite um número para ser verificado:</p>
+
+                <input type="number" class="campo" placeholder="Digite um número">
+                <button class="exercicio__botao" onclick="verificarParImpar()">Verificar</button>
+
+                <p class="exercicio__texto resposta">O número é: </p>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="exercicio exercicio4" id="exercicio-4">
+
+            <h2 class="titulo__exercicio">4- Crie uma função que converta a temperatura de Celsius para Fahrenheit e vice-versa. Utilize uma variável para indicar a escala desejada e um bloco condicional para determinar qual conversão realizar
+
+            </h2>
+
+            <div class="exercicio__box">
+
+                <p class="exercicio__texto">Escolha uma escala de temperatura:</p>
+
+                <select name="tipo-escala" class="escala">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+
+                <input type="number" class="campo" placeholder="Digite a temperatura">
+                <br>
+                <br>
+                <button class="exercicio__botao" onclick="converterTemperatura()">Converter</button>
+
+                <p class="exercicio__texto resposta">A temperatura de: </p>
+
+            </div>
+
+        </section>
+        
+        <hr>
+
+    </main>
+
+
+    <script src="./js/exercicios.js"></script>
+</body>
+
+</html>
